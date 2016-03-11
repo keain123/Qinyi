@@ -1,0 +1,435 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/com.ch.qinyicamera"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00000000"
+        android:gravity="top"
+        tools:context="${relativePackage}.${activityClass}" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/photo"
+            android:orientation="vertical" >
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/et_item_name"
+                style="@style/itemTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="名称"
+                android:inputType="text"
+                android:padding="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="#FF000000"
+                app:et_inputId="@+id/et_item_name_input"
+                app:et_supportMode="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_material"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="材料"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_material_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_machine_number"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="机号"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_machine_number_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_temperature"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="温度"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_temperature_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_color"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="颜色"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_color_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_card_number"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="卡号"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_card_number_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_pressure"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="压力"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_pressure_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_pressure_speed"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="速度"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_pressure_speed_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_pressure_time"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="时间"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_pressure_time_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_keep_pressure"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="保压"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_keep_pressure_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_keep_pressure_speed"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="速度"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_keep_pressure_speed_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_keep_pressure_time"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="时间"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_keep_pressure_time_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_cool_down"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="冷却"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_cool_down_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_period"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="周期"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_period_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_production_weight"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="制品重量"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    app:et_inputId="@+id/et_production_weight_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_store_material"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="储料"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_store_material_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_store_material_process"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="行程"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_store_material_process_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_open_speed"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="开模速度"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_open_speed_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_open_speed_process"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="行程"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_open_speed_process_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_prop_speed"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="顶出速度"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_prop_speed_input"
+                    app:et_supportMode="none" />
+
+                <com.rey.material.widget.EditText
+                    android:id="@+id/et_prop_speed_count"
+                    style="@style/itemTextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="次数"
+                    android:inputType="text"
+                    android:padding="5dp"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                    android:textColor="#FF000000"
+                    app:et_inputId="@+id/et_prop_speed_count_input"
+                    app:et_supportMode="none" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/border" 
+                android:padding="5dp">
+
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/rb_work_type_1"
+                    style="@style/RadioButtonDrawable"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:text="半自动"
+                    android:textSize="22sp" />
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/rb_work_type_2"
+                    style="@style/RadioButtonDrawable"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:text="全自动"
+                    android:textSize="22sp" />
+                <com.rey.material.widget.RadioButton
+                    android:id="@+id/rb_work_type_3"
+                    style="@style/RadioButtonDrawable"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:gravity="center_vertical"
+                    android:text="机械手"
+                    android:textSize="22sp" />
+
+            </LinearLayout>
+
+            <com.rey.material.widget.EditText
+                android:id="@+id/et_desc"
+                style="@style/itemTextStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="备注"
+                android:inputType="text"
+                android:lines="3"
+                android:minLines="3"
+                android:padding="5dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                android:textColor="#FF000000"
+                app:et_inputId="@+id/et_desc_input"
+                app:et_supportMode="none" />
+        </LinearLayout>
+
+        <com.rey.material.widget.FloatingActionButton
+            android:id="@+id/fab_save"
+            style="@style/FloatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="16dp"
+            app:fab_iconSrc="@android:drawable/ic_menu_save" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+
+</ScrollView>

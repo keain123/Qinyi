@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+<!-- 
+   <com.baobomb.popuplistview.PopupListView
+        android:id="@+id/item_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.baobomb.popuplistview.PopupListView>
+   -->  
+   <ListView 
+       android:id="@+id/item_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:cacheColorHint="#FFFFFF"
+        android:dividerHeight="0dp"
+        />
+    <com.rey.material.widget.FloatingActionButton
+        android:id="@+id/fab_add"
+        style="@style/FloatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="16dp"
+        android:src="@android:drawable/ic_menu_upload" />
+
+</RelativeLayout>
